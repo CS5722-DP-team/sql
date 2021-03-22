@@ -75,3 +75,34 @@ INSERT INTO `sauce` (name) VALUES ('Mushroom');
 INSERT INTO `vegetable` (name) VALUES ('Potato');
 INSERT INTO `vegetable` (name) VALUES ('Tomato');
 INSERT INTO `vegetable` (name) VALUES ('Carrot');
+
+CREATE TABLE `capacity`  (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1;
+CREATE TABLE `additive`  (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1;
+
+INSERT INTO `capacity` (name) VALUES ('Large');
+INSERT INTO `capacity` (name) VALUES ('Medium');
+INSERT INTO `capacity` (name) VALUES ('Small');
+
+INSERT INTO `additive` (name) VALUES ('NoMilk');
+INSERT INTO `additive` (name) VALUES ('WholeMilk');
+
+CREATE TABLE `toy`  (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1;
+CREATE TABLE `food`  (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1;
+CREATE TABLE `drink`  (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1;
+
+INSERT INTO `toy` (name) VALUES ('Car');
+INSERT INTO `toy` (name) VALUES ('Plane');
+
+INSERT INTO `food` (name) VALUES ('Hamburger');
+INSERT INTO `food` (name) VALUES ('Chicken');
+
+INSERT INTO `drink` (name) VALUES ('Cola');
+INSERT INTO `drink` (name) VALUES ('Juice');
+
+
+CREATE TABLE `room`  (   `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1;
+INSERT INTO `room` (name) VALUES ('Balcony');
+INSERT INTO `room` (name) VALUES ('Bathroom');
+INSERT INTO `room` (name) VALUES ('Laundry');
+INSERT INTO `room` (name) VALUES ('Lounge');
+
